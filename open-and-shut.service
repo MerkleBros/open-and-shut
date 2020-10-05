@@ -1,0 +1,10 @@
+[Unit]
+Description=Run open-and-shut.sh for counting laptop open and close
+After=default.target
+
+[Service]
+Restart=on-failure
+ExecStart=/home/patrick/recurse/acpi-actions/open-and-shut.sh
+
+[Install]
+WantedBy=default.target
